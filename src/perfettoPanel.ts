@@ -17,12 +17,14 @@ export class PerfettoPanel implements vscode.Disposable {
   private readonly extensionUri: vscode.Uri;
   private readonly disposables: vscode.Disposable[] = [];
   private readonly log: (message: string) => void;
+  private readonly onDispose: () => void;
   private uiTarget: PerfettoUiTarget;
 
   public static createOrShow(
     extensionUri: vscode.Uri,
     uiTarget: PerfettoUiTarget,
     log: (message: string) => void,
+    onDispose: () => void,
   ): PerfettoPanel {
     if (PerfettoPanel.currentPanel) {
       PerfettoPanel.currentPanel.panel.reveal(vscode.ViewColumn.Active);
@@ -36,7 +38,7 @@ export class PerfettoPanel implements vscode.Disposable {
       localResourceRoots: [vscode.Uri.joinPath(extensionUri, 'media')],
     });
 
-    PerfettoPanel.currentPanel = new PerfettoPanel(panel, extensionUri, uiTarget, log);
+    PerfettoPanel.currentPanel = new PerfettoPanel(panel, extensionUri, uiTarget, log, onDispose);
     return PerfettoPanel.currentPanel;
   }
 
@@ -45,11 +47,13 @@ export class PerfettoPanel implements vscode.Disposable {
     extensionUri: vscode.Uri,
     uiTarget: PerfettoUiTarget,
     log: (message: string) => void,
+    onDispose: () => void,
   ) {
     this.panel = panel;
     this.extensionUri = extensionUri;
     this.uiTarget = uiTarget;
     this.log = log;
+    this.onDispose = onDispose;
     this.panel.webview.html = this.getHtml();
     this.panel.onDidDispose(() => this.dispose(), null, this.disposables);
     this.panel.webview.onDidReceiveMessage((message) => this.handleWebviewMessage(message), null, this.disposables);
@@ -113,6 +117,7 @@ export class PerfettoPanel implements vscode.Disposable {
   public dispose(): void {
     PerfettoPanel.currentPanel = undefined;
     this.log('Webview panel disposed.');
+    this.onDispose();
 
     while (this.disposables.length > 0) {
       this.disposables.pop()?.dispose();

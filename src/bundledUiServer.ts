@@ -44,6 +44,7 @@ export class BundledUiServer implements vscode.Disposable {
 
     this.server.close();
     this.server = undefined;
+    this.log('Bundled Perfetto UI server stopped.');
   }
 
   private async start(): Promise<string> {

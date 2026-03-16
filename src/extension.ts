@@ -55,7 +55,9 @@ async function openTrace(
   const fileName = getTraceFileName(traceUri);
   const source = traceUri.toString(true);
   const uiTarget = await resolvePerfettoUiTarget(log);
-  const panel = PerfettoPanel.createOrShow(context.extensionUri, uiTarget, log);
+  const panel = PerfettoPanel.createOrShow(context.extensionUri, uiTarget, log, () => {
+    disposeBundledUiServer();
+  });
 
   try {
     log(`Open requested: ${source}`);
@@ -122,34 +124,42 @@ async function resolvePerfettoUiTarget(log: (message: string) => void): Promise<
 }
 
 async function updateCurrentPanelTarget(log: (message: string) => void): Promise<void> {
+  const uiUrlOverride = getPerfettoUiOverride(log);
+  if (uiUrlOverride) {
+    const panel = PerfettoPanel.currentPanel;
+    if (panel) {
+      const uiTarget: PerfettoUiTarget = {
+        url: uiUrlOverride,
+        label: uiUrlOverride,
+        isBundled: false,
+      };
+      log(`Perfetto UI target changed to ${uiTarget.label}`);
+      panel.setUiTarget(uiTarget);
+    }
+    disposeBundledUiServer();
+    return;
+  }
+
   const panel = PerfettoPanel.currentPanel;
   if (!panel) {
     return;
   }
 
-  const uiUrlOverride = getPerfettoUiOverride(log);
-  if (!uiUrlOverride) {
-    if (!bundledUiServer) {
-      throw new Error('Bundled Perfetto UI server is not initialized.');
-    }
-
-    const uiTarget: PerfettoUiTarget = {
-      url: await bundledUiServer.getUiUrl(),
-      label: 'bundled Perfetto UI',
-      isBundled: true,
-    };
-    log(`Perfetto UI target changed to ${uiTarget.label}`);
-    panel.setUiTarget(uiTarget);
-    return;
+  if (!bundledUiServer) {
+    throw new Error('Bundled Perfetto UI server is not initialized.');
   }
 
   const uiTarget: PerfettoUiTarget = {
-    url: uiUrlOverride,
-    label: uiUrlOverride,
-    isBundled: false,
+    url: await bundledUiServer.getUiUrl(),
+    label: 'bundled Perfetto UI',
+    isBundled: true,
   };
   log(`Perfetto UI target changed to ${uiTarget.label}`);
   panel.setUiTarget(uiTarget);
+}
+
+function disposeBundledUiServer(): void {
+  bundledUiServer?.dispose();
 }
 
 function isSupportedTrace(resource: vscode.Uri): boolean {
