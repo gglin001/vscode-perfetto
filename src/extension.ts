@@ -5,7 +5,6 @@ import { PerfettoPanel, type PerfettoUiTarget } from './perfettoPanel';
 
 const COMMAND_OPEN_TRACE = 'vscode-perfetto.openTrace';
 const COMMAND_SHOW_OUTPUT = 'vscode-perfetto.showOutput';
-const SUPPORTED_TRACE_SUFFIXES = ['.json', '.json.gz', '.chrome_trace'];
 const OUTPUT_CHANNEL_NAME = 'Perfetto';
 let bundledUiServer: BundledUiServer | undefined;
 
@@ -47,8 +46,8 @@ async function openTrace(
   traceUri: vscode.Uri | undefined,
   log: (message: string) => void,
 ): Promise<void> {
-  if (!traceUri || !isSupportedTrace(traceUri)) {
-    void vscode.window.showErrorMessage('Select a .json, .json.gz, or .chrome_trace file first.');
+  if (!traceUri) {
+    void vscode.window.showErrorMessage('Select a file first.');
     return;
   }
 
@@ -160,11 +159,6 @@ async function updateCurrentPanelTarget(log: (message: string) => void): Promise
 
 function disposeBundledUiServer(): void {
   bundledUiServer?.dispose();
-}
-
-function isSupportedTrace(resource: vscode.Uri): boolean {
-  const fileName = getTraceFileName(resource).toLowerCase();
-  return SUPPORTED_TRACE_SUFFIXES.some((suffix) => fileName.endsWith(suffix));
 }
 
 function getTraceFileName(resource: vscode.Uri): string {

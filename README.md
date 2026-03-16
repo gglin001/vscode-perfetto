@@ -2,7 +2,7 @@
 
 Open trace files in the bundled Perfetto UI from VS Code. The extension reads files through `vscode.workspace.fs`, so it works for both local folders and Remote-SSH workspaces.
 
-Right-click a `.json`, `.json.gz`, or `.chrome_trace` file and choose `Open in Perfetto`. You can also open the file first, then run `Perfetto: Open in Perfetto`.
+Right-click a `.json`, `.json.gz`, or `.chrome_trace` file and choose `Open in Perfetto`. You can also open any file first, then run `Perfetto: Open in Perfetto`.
 
 Use `Perfetto: Show Output` to inspect extension logs.
 
