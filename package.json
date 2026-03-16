@@ -22,7 +22,8 @@
     "dist",
     "media",
     "perfetto-ui",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "activationEvents": [
     "onCommand:vscode-perfetto.openTrace",
@@ -70,7 +71,7 @@
   },
   "scripts": {
     "compile": "tsc -p ./",
-    "package:vsix": "vsce package --no-yarn --allow-missing-repository --skip-license",
+    "package:vsix": "vsce package --no-yarn",
     "perfetto:build:source": "./scripts/build-perfetto-ui-from-source.sh",
     "perfetto:fetch": "./scripts/fetch-perfetto-ui.sh"
   },
