@@ -1,0 +1,3572 @@
+{
+  "displayTimeUnit": "us",
+  "traceEvents": [
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "softmax_kernel"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 4035.333,
+      "name": "softmax_kernel",
+      "ph": "X",
+      "tid": 0,
+      "ts": 0.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 22.458,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 225.75
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 18.5,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 255.583
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.375,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 276.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.875,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 294.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.0,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 313.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.833,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 328.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.459,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 351.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 18.041,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 370.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.083,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 390.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.75,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 406.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.584,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 424.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.0,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 439.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.958,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 459.542
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.417,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 477.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.875,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 497.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.417,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 512.75
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.417,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 531.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.542,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 546.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.5,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 566.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.583,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 583.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.083,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 603.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.125,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 618.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.042,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 637.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.792,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 652.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.792,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 671.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.959,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 689.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.958,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 708.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.292,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 724.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.333,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 742.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.5,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 756.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.791,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 775.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.417,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 793.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.458,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 812.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.917,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 827.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.792,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 845.75
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.375,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 859.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.042,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 881.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.625,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 899.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.625,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 918.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 18.75,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 933.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 47.541,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 955.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 22.584,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1011.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.0,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1046.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.125,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1066.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.625,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1086.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.0,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1101.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.875,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1119.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.0,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1134.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.25,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1191.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.042,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1212.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.708,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1231.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.792,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1246.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.0,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1265.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.25,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1279.75
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.708,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1300.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.833,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1317.542
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1336.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.291,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1352.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.291,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1371.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.25,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1384.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.333,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1404.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.916,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1421.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.625,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1440.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.209,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1455.583
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.667,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1474.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.292,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1488.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.667,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1510.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.167,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1528.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.917,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1547.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.125,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1562.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.542,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1581.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.458,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1595.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.75,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1614.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 17.666,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1631.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1652.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.875,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1667.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.375,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1685.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.958,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1699.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.667,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1719.75
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.417,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1736.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.333,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1755.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.833,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1770.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.083,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1789.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.541,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1802.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.417,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1822.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.667,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1839.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.458,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1858.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.708,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1873.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.334,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1891.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.542,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1905.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.834,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1924.583
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.417,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1942.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.375,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1960.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.25,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1975.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.458,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 1994.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.833,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2008.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.708,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2030.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.5,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2047.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.292,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2066.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.792,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2081.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.166,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2099.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.416,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2113.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.417,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2132.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.542,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2149.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.666,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2168.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.208,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2183.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.5,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2202.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.542,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2216.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.791,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2235.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.417,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2253.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.417,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2271.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.917,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2286.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.542,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2305.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.542,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2319.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.5,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2338.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.417,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2355.583
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.333,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2374.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.042,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2389.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.625,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2407.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.75,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2421.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.209,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2441.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.292,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2457.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2476.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.75,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2492.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.583,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2510.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.292,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2524.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.333,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2545.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.583,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2562.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.542,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2581.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.917,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2596.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.541,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2615.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.458,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2629.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.791,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2647.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.75,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2662.75
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.666,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2679.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.0,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2692.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.0,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2709.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.125,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2721.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2738.542
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.75,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2753.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.25,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2770.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.166,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2783.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.083,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2800.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.542,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2812.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.0,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2829.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.542,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2844.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.0,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2861.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.75,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2874.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 9.75,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2890.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.959,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2902.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.625,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2920.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.709,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2934.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.167,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2953.958
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.417,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2967.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.0,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2983.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.792,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 2995.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.833,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3012.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 16.292,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3027.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.209,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3045.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.916,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3059.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.0,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3075.333
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.833,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3087.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3105.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.375,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3120.458
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.083,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3137.125
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.125,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3150.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.417,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3166.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.791,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3180.542
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.916,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3197.542
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.75,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3212.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.125,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3229.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.125,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3243.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 9.958,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3259.625
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.0,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3271.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.5,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3288.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.625,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3305.542
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.25,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3322.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.709,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3335.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 9.959,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3351.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.792,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3363.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.0,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3380.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.709,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3397.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.833,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3413.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.875,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3426.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 9.833,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3442.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3454.833
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.0,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3471.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.708,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3486.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.375,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3504.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.25,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3518.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 9.916,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3534.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.917,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3547.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.625,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3565.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.833,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3580.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.875,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3597.083
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.875,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3610.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.291,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3626.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.917,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3641.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.875,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3658.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.625,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3673.208
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.916,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3690.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.917,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3703.25
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.291,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3719.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.75,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3733.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.583,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3749.917
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.5,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3764.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.417,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3781.375
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.833,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3794.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 9.958,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3810.875
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.5,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3823.042
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.333,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3839.792
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.833,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3856.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.0,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3873.5
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 14.041,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3886.667
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.0,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3903.167
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.666,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3915.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "load_row",
+          "load_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 12.916,
+      "name": "load_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3932.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "subtract_max",
+          "subtract_max"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 15.708,
+      "name": "subtract_max",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3947.417
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "exp",
+          "exp"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 11.125,
+      "name": "exp",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3965.292
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "sum",
+          "sum"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.959,
+      "name": "sum",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3978.708
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "normalize",
+          "normalize"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 10.125,
+      "name": "normalize",
+      "ph": "X",
+      "tid": 0,
+      "ts": 3995.0
+    },
+    {
+      "args": {
+        "call_stack": [
+          "ROOT",
+          "softmax_kernel",
+          "store_row",
+          "store_row"
+        ]
+      },
+      "cat": "kernel",
+      "dur": 13.959,
+      "name": "store_row",
+      "ph": "X",
+      "tid": 0,
+      "ts": 4007.333
+    }
+  ]
+}

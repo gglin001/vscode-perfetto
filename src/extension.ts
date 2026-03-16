@@ -5,27 +5,14 @@ import { PerfettoPanel, type PerfettoUiTarget } from './perfettoPanel';
 
 const COMMAND_OPEN_TRACE = 'vscode-perfetto.openTrace';
 const COMMAND_SHOW_OUTPUT = 'vscode-perfetto.showOutput';
-const COMMAND_TEST_GET_STATE = 'vscode-perfetto._test.getState';
 const SUPPORTED_EXTENSIONS = new Set(['.json', '.chrom_trace', '.chrome_trace']);
 const OUTPUT_CHANNEL_NAME = 'Perfetto';
-const MAX_TEST_LOG_LINES = 200;
 let bundledUiServer: BundledUiServer | undefined;
-
-type TestState = {
-  logs: string[];
-};
 
 export function activate(context: vscode.ExtensionContext): void {
   const output = vscode.window.createOutputChannel(OUTPUT_CHANNEL_NAME);
-  const testState: TestState = {
-    logs: [],
-  };
   const log = (message: string): void => {
     const line = `[${new Date().toLocaleTimeString('en-GB', { hour12: false })}] ${message}`;
-    testState.logs.push(line);
-    if (testState.logs.length > MAX_TEST_LOG_LINES) {
-      testState.logs.shift();
-    }
     output.appendLine(line);
   };
 
@@ -53,14 +40,6 @@ export function activate(context: vscode.ExtensionContext): void {
       }
     }),
   );
-
-  if (context.extensionMode === vscode.ExtensionMode.Test) {
-    context.subscriptions.push(
-      vscode.commands.registerCommand(COMMAND_TEST_GET_STATE, () => ({
-        logs: [...testState.logs],
-      })),
-    );
-  }
 }
 
 async function openTrace(

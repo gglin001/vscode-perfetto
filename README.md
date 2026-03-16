@@ -21,33 +21,13 @@ pnpm run compile
 pnpm run package:vsix
 ```
 
-Press `F5` to launch the extension host. To use an external Perfetto UI, set `perfetto.uiUrl` to the target URL.
+## Debug In VS Code
 
-## CLI Debugging and E2E Tests
+Open this repository in VS Code, then use the built-in `Run Extension` launch configuration in `.vscode/launch.json`.
 
-Start an extension development host from the command line without packaging a `.vsix`:
+1. Run `pnpm install`.
+2. Press `F5` in VS Code.
+3. In the Extension Development Host window, open a `.json`, `.chrom_trace`, or `.chrome_trace` file.
+4. Run `Perfetto: Open in Perfetto` or use the Explorer context menu.
 
-```bash
-code --extensionDevelopmentPath="$(pwd)" --disable-extensions .
-```
-
-Run unattended end-to-end tests with:
-
-```bash
-pnpm run test:e2e
-```
-
-This command:
-
-- Compiles the extension and test code.
-- Reuses your installed VS Code instead of downloading another copy.
-- Loads this repository through `--extensionDevelopmentPath`, without installing a `.vsix`.
-- Opens `demos/softmax.chrome_trace` and verifies the Perfetto panel and extension logs.
-
-Requirement:
-
-```bash
-which code
-```
-
-The `code` CLI must be on `PATH` and point to your desktop VS Code installation.
+To use an external Perfetto UI while debugging, set `perfetto.uiUrl` to the target URL before launching the extension host.
