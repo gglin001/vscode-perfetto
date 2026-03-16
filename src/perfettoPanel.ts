@@ -7,7 +7,6 @@ const CHUNK_SIZE = 256 * 1024;
 export type PerfettoUiTarget = {
   url: string;
   label: string;
-  isBundled: boolean;
 };
 
 export class PerfettoPanel implements vscode.Disposable {
@@ -67,7 +66,6 @@ export class PerfettoPanel implements vscode.Disposable {
       type: 'setUiUrl',
       uiUrl: uiTarget.url,
       uiLabel: uiTarget.label,
-      uiIsBundled: uiTarget.isBundled,
     });
   }
 
@@ -77,18 +75,13 @@ export class PerfettoPanel implements vscode.Disposable {
     const totalChunks = Math.max(1, Math.ceil(bytes.byteLength / CHUNK_SIZE));
 
     this.panel.title = `Perfetto: ${fileName}`;
-    if (this.uiTarget.isBundled) {
-      this.log(`Sending ${fileName} to bundled Perfetto UI via webview bridge in ${totalChunks} chunk(s).`);
-    } else {
-      this.log(`Sending ${fileName} to webview in ${totalChunks} chunk(s) using ${this.uiTarget.label}.`);
-    }
+    this.log(`Sending ${fileName} to bundled Perfetto UI via webview bridge in ${totalChunks} chunk(s).`);
 
     await this.panel.webview.postMessage({
       type: 'openTraceStart',
       transferId,
       uiUrl: this.uiTarget.url,
       uiLabel: this.uiTarget.label,
-      uiIsBundled: this.uiTarget.isBundled,
       fileName,
       totalChunks,
       totalBytes: bytes.byteLength,
@@ -168,7 +161,6 @@ export class PerfettoPanel implements vscode.Disposable {
     <script nonce="${nonce}">
       window.__PERFETTO_UI_URL__ = ${JSON.stringify(this.uiTarget.url)};
       window.__PERFETTO_UI_LABEL__ = ${JSON.stringify(this.uiTarget.label)};
-      window.__PERFETTO_UI_IS_BUNDLED__ = ${JSON.stringify(this.uiTarget.isBundled)};
     </script>
     <script nonce="${nonce}" src="${scriptUri}"></script>
   </body>

@@ -390,12 +390,6 @@ function injectBridgeScript(html: string): string {
 
       function earlyMessageHandler(event) {
         const data = event.data;
-        if (data === 'PING') {
-          event.stopImmediatePropagation();
-          event.source?.postMessage('PONG', '*');
-          return;
-        }
-
         if (!data || typeof data !== 'object' || data.__vscodePerfettoOpenTrace__ !== true) {
           return;
         }

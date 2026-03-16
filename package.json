@@ -2,7 +2,7 @@
   "name": "vscode-perfetto",
   "displayName": "vscode-perfetto",
   "description": "vscode perfetto ui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "gglin001-vscode",
   "license": "MIT",
   "packageManager": "pnpm@10.30.0",
@@ -68,12 +68,7 @@
             "browser"
           ],
           "default": "browser",
-          "description": "How to open Perfetto. Use webview to embed the UI inside VS Code, or browser to open the UI URL in a browser."
-        },
-        "perfetto.uiUrl": {
-          "type": "string",
-          "default": "",
-          "description": "Optional Perfetto UI override URL. Leave empty to use the bundled UI."
+          "description": "How to open the bundled Perfetto UI. Use webview to embed it inside VS Code, or browser to open it in a browser."
         }
       }
     }
