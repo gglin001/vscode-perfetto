@@ -301,6 +301,7 @@ function injectBridgeScript(html: string): string {
     (function () {
       const LOG_KEY = '__vscodePerfettoLog__';
       const STATE_KEY = '__vscodePerfettoState__';
+      const DISABLE_BACKGROUND_LOADS_KEY = '__VSCODE_PERFETTO_DISABLE_BACKGROUND_LOADS__';
       let pendingTrace = undefined;
       let readyNotified = false;
       let readyTimerId = undefined;
@@ -348,6 +349,10 @@ function injectBridgeScript(html: string): string {
           message,
         });
       }
+
+      const searchParams = new URLSearchParams(window.location.search);
+      window[DISABLE_BACKGROUND_LOADS_KEY] =
+        searchParams.get('vscode-perfetto-disable-background-loads') === '1';
 
       function canOpenTraceDirectly() {
         return !!(window.app && typeof window.app.openTraceFromBuffer === 'function');
@@ -415,6 +420,9 @@ function injectBridgeScript(html: string): string {
       window.addEventListener('message', earlyMessageHandler, { capture: true, passive: true });
       window.addEventListener('load', maybeNotifyReady);
       readyTimerId = window.setInterval(maybeNotifyReady, 100);
+      if (window[DISABLE_BACKGROUND_LOADS_KEY] === true) {
+        postLog('info', ['Disabled Perfetto background warmup tasks for integrated browser mode.']);
+      }
       postLog('debug', ['Perfetto UI bridge installed.']);
     })();
   </script>`;

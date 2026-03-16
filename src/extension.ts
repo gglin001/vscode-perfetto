@@ -134,6 +134,7 @@ async function openTraceInBrowser(traceUri: vscode.Uri, log: (message: string) =
 
 function buildBrowserUrl(uiUrl: string, traceUrl: string): string {
   const target = new URL(uiUrl);
+  target.searchParams.set('vscode-perfetto-disable-background-loads', '1');
   const routeArgs = new URLSearchParams();
   routeArgs.set('url', traceUrl);
   target.hash = `!/?${routeArgs.toString()}`;
