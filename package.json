@@ -1,10 +1,16 @@
 {
   "name": "vscode-perfetto",
-  "displayName": "VSCode Perfetto",
-  "description": "Open trace files in bundled Perfetto UI from VS Code.",
-  "version": "0.0.4",
-  "publisher": "allen",
+  "displayName": "vscode-perfetto",
+  "description": "vscode perfetto ui",
+  "version": "0.0.5",
+  "publisher": "gglin001-vscode",
+  "license": "MIT",
   "packageManager": "pnpm@10.30.0",
+  "homepage": "https://github.com/gglin001/vscode-perfetto",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gglin001/vscode-perfetto.git"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
