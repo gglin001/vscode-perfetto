@@ -1,0 +1,77 @@
+{
+  "name": "vscode-perfetto",
+  "displayName": "VSCode Perfetto",
+  "description": "Open trace files in bundled Perfetto UI from VS Code.",
+  "version": "0.0.2",
+  "publisher": "allen",
+  "packageManager": "pnpm@10.30.0",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "extensionKind": [
+    "workspace"
+  ],
+  "main": "./dist/extension.js",
+  "files": [
+    "dist",
+    "media",
+    "perfetto-ui",
+    "README.md"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-perfetto.openTrace",
+    "onCommand:vscode-perfetto.showOutput"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-perfetto.openTrace",
+        "title": "Open in Perfetto",
+        "category": "Perfetto"
+      },
+      {
+        "command": "vscode-perfetto.showOutput",
+        "title": "Show Output",
+        "category": "Perfetto"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "vscode-perfetto.openTrace",
+          "when": "explorerResourceIsFolder == false && (resourceExtname == .json || resourceExtname == .chrom_trace || resourceExtname == .chrome_trace)",
+          "group": "navigation@50"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "vscode-perfetto.openTrace",
+          "when": "resourceExtname == .json || resourceExtname == .chrom_trace || resourceExtname == .chrome_trace",
+          "group": "navigation@50"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Perfetto",
+      "properties": {
+        "perfetto.uiUrl": {
+          "type": "string",
+          "default": "",
+          "description": "Optional Perfetto UI override URL. Leave empty to use the bundled UI."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "package:vsix": "vsce package --no-yarn --allow-missing-repository --skip-license",
+    "perfetto:build:source": "./scripts/build-perfetto-ui-from-source.sh",
+    "perfetto:fetch": "./scripts/fetch-perfetto-ui.sh"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.2",
+    "@types/node": "^24.5.2",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.9.2"
+  }
+}

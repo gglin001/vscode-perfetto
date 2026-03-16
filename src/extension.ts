@@ -1,0 +1,108 @@
+import * as path from 'node:path';
+import * as vscode from 'vscode';
+import { PerfettoPanel } from './perfettoPanel';
+
+const COMMAND_OPEN_TRACE = 'vscode-perfetto.openTrace';
+const COMMAND_SHOW_OUTPUT = 'vscode-perfetto.showOutput';
+const SUPPORTED_EXTENSIONS = new Set(['.json', '.chrom_trace', '.chrome_trace']);
+const OUTPUT_CHANNEL_NAME = 'Perfetto';
+
+export function activate(context: vscode.ExtensionContext): void {
+  const output = vscode.window.createOutputChannel(OUTPUT_CHANNEL_NAME);
+  const log = (message: string): void => {
+    output.appendLine(`[${new Date().toLocaleTimeString('en-GB', { hour12: false })}] ${message}`);
+  };
+
+  context.subscriptions.push(output);
+  log('Extension activated.');
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(COMMAND_OPEN_TRACE, async (resource?: vscode.Uri) => {
+      await openTrace(context, resource ?? vscode.window.activeTextEditor?.document.uri, log);
+    }),
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(COMMAND_SHOW_OUTPUT, () => {
+      output.show(true);
+    }),
+  );
+
+  context.subscriptions.push(
+    vscode.workspace.onDidChangeConfiguration((event) => {
+      if (event.affectsConfiguration('perfetto.uiUrl')) {
+        const uiUrl = getPerfettoUiOverride(log);
+        log(`Perfetto UI target changed to ${uiUrl ?? 'bundled Perfetto UI'}`);
+        PerfettoPanel.currentPanel?.setUiUrl(uiUrl);
+      }
+    }),
+  );
+}
+
+async function openTrace(
+  context: vscode.ExtensionContext,
+  traceUri: vscode.Uri | undefined,
+  log: (message: string) => void,
+): Promise<void> {
+  if (!traceUri || !isSupportedTrace(traceUri)) {
+    void vscode.window.showErrorMessage('Select a .json, .chrom_trace or .chrome_trace file first.');
+    return;
+  }
+
+  const fileName = getTraceFileName(traceUri);
+  const source = traceUri.toString(true);
+  const uiUrl = getPerfettoUiOverride(log);
+  const panel = PerfettoPanel.createOrShow(context.extensionUri, uiUrl, log);
+
+  log(`Open requested: ${source}`);
+  log(`Perfetto UI: ${uiUrl ?? 'bundled Perfetto UI'}`);
+
+  try {
+    const readStart = Date.now();
+    const bytes = await vscode.workspace.fs.readFile(traceUri);
+    log(`Read ${bytes.byteLength} bytes in ${Date.now() - readStart} ms.`);
+    await panel.openTrace(traceUri, bytes);
+    log(`Trace queued for ${fileName}.`);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    log(`Open failed for ${fileName}: ${message}`);
+    outputError(log, fileName, message);
+    void vscode.window.showErrorMessage(`Failed to open ${fileName}: ${message}`);
+  }
+}
+
+function outputError(log: (message: string) => void, fileName: string, message: string): void {
+  log(`Error: ${fileName}: ${message}`);
+}
+
+function getPerfettoUiOverride(log?: (message: string) => void): string | undefined {
+  const configuredValue = vscode.workspace
+    .getConfiguration('perfetto')
+    .get<string>('uiUrl', '')
+    .trim();
+
+  if (!configuredValue) {
+    return undefined;
+  }
+
+  try {
+    const url = new URL(configuredValue);
+    if (url.protocol === 'http:' || url.protocol === 'https:') {
+      return url.toString();
+    }
+  } catch {
+    // Fall back to the bundled UI when the configured URL is invalid.
+  }
+
+  log?.(`Ignoring invalid perfetto.uiUrl: ${configuredValue}`);
+  return undefined;
+}
+
+function isSupportedTrace(resource: vscode.Uri): boolean {
+  const extension = path.posix.extname(resource.path).toLowerCase();
+  return SUPPORTED_EXTENSIONS.has(extension);
+}
+
+function getTraceFileName(resource: vscode.Uri): string {
+  return path.posix.basename(resource.path) || resource.toString(true);
+}

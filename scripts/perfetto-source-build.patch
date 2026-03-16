@@ -1,0 +1,36 @@
+diff --git a/tools/install-build-deps b/tools/install-build-deps
+index 4e892a0..f59fc11 100755
+--- a/tools/install-build-deps
++++ b/tools/install-build-deps
+@@ -1047,10 +1047,14 @@ def Main():
+         os.symlink(tools_hook_path, git_hook_path)
+ 
+   cur_python_interpreter = sys.executable
+-  test_data_synced = 0 == subprocess.call([
+-      cur_python_interpreter, TEST_DATA_SCRIPT, 'status', '--quiet',
+-      '--ignore-new'
+-  ])
++  skip_test_data = os.environ.get('PERFETTO_SKIP_TEST_DATA') == '1'
++  test_data_synced = skip_test_data or 0 == subprocess.call([
++      cur_python_interpreter, TEST_DATA_SCRIPT, 'status', '--quiet',
++      '--ignore-new'
++  ])
++  if skip_test_data and not args.check_only:
++    logging.info('Skipping //test/data sync because PERFETTO_SKIP_TEST_DATA=1')
++
+   if args.check_only:
+     if not deps_updated and test_data_synced:
+       with open(args.check_only, 'w') as f:
+diff --git a/ui/build.js b/ui/build.js
+index 2fda610..64a0c55 100644
+--- a/ui/build.js
++++ b/ui/build.js
+@@ -530,7 +530,7 @@ function buildWasm(skipWasmBuild) {
+ function buildWasm(skipWasmBuild) {
+   if (!skipWasmBuild) {
+     if (!cfg.noOverrideGnArgs) {
+-      let gnVars = `is_debug=${cfg.debug}`;
++      let gnVars = `is_debug=${cfg.debug} skip_buildtools_check=true`;
+       if (childProcess.spawnSync('which', ['ccache']).status === 0) {
+         gnVars += ` cc_wrapper="ccache"`;
+       }
